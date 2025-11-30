@@ -1,0 +1,36 @@
+#================== Python Libraries Needed =================
+'''
+1.argparse (built-in, no install needed)
+2.os, sys, re, math, logging, collections (built-in, no install needed)
+3.pandas → for Excel/CSV handling
+4.requests → for HTTP requests
+5.beautifulsoup4 → for HTML parsing
+6.nltk → for tokenization, opinion lexicon, POS tagging
+7.textblob → for sentiment analysis
+8.textstat → for readability metrics
+9.readability-lxml → for extracting main content from HTML
+10.newspaper3k → for article extraction
+11.openpyxl → Excel engine for Pandas
+'''
+#====================== End ================================
+
+# Core data libraries
+pip install pandas requests beautifulsoup4
+
+# NLP & sentiment analysis
+pip install nltk textblob
+
+# Readability metrics
+pip install textstat readability-lxml newspaper3k
+
+# Excel support
+pip install openpyxl
+# ====================== Then download NLTK datasets ===========
+python - <<'PY'
+import nltk
+nltk.download('punkt')
+nltk.download('opinion_lexicon')
+nltk.download('averaged_perceptron_tagger')
+PY
+# ============= requried ==================
+python -m textblob.download_corpora  
