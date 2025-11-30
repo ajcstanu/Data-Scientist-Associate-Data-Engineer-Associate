@@ -16,7 +16,7 @@ This project is fully implemented using **Python** as instructed.
 
 ---
 
-## ** Project Structure**
+##  Project Structure
 
 ```
 /Your_Submission/
@@ -36,7 +36,7 @@ This project is fully implemented using **Python** as instructed.
 
 ---
 
-## **🛠️ Requirements**
+##  Requirements
 
 Install all dependencies using:
 
@@ -44,7 +44,7 @@ Install all dependencies using:
 pip install -r requirements.txt
 ```
 
-### **Python Libraries Used**
+### Python Libraries Used
 
 * requests
 * beautifulsoup4
@@ -59,7 +59,7 @@ NLTK stopwords are auto-downloaded inside the script.
 
 ---
 
-## **🚀 How to Run the Script**
+##  How to Run the Script
 
 Open terminal / command prompt in the project directory and run:
 
@@ -67,7 +67,7 @@ Open terminal / command prompt in the project directory and run:
 python blackcoffer_assignment.py --input Input.xlsx --output Output.xlsx --text_dir extracted_articles
 ```
 
-### **Arguments Explained**
+### Arguments Explained
 
 | Argument     | Description                                    |
 | ------------ | ---------------------------------------------- |
@@ -83,9 +83,9 @@ python blackcoffer_assignment.py --input Input.xlsx --output Output.xlsx --text_
 
 ---
 
-## ** What the Script Does**
+##  What the Script Does
 
-###  **Data Extraction**
+###  Data Extraction
 
 For each URL in Input.xlsx:
 
@@ -103,7 +103,7 @@ For each URL in Input.xlsx:
 
 ---
 
-###  **Text Analysis**
+###  Text Analysis
 
 The script computes all variables listed in **Text Analysis.docx**, including:
 
@@ -125,7 +125,7 @@ Complex words are identified using a custom syllable-counting function.
 
 ---
 
-###  **Output Generation**
+###  Output Generation
 
 Creates **Output.xlsx** with:
 
@@ -135,7 +135,7 @@ Creates **Output.xlsx** with:
 
 ---
 
-## ** Dependencies / Dictionary Files**
+##  Dependencies / Dictionary Files
 
 The script uses:
 
@@ -148,7 +148,7 @@ Ensure both files are included in the same folder structure.
 
 ---
 
-## ** Notes**
+##  Notes
 
 * Internet connection is required for web scraping.
 * If some pages do not load, the script logs errors and continues.
@@ -156,7 +156,7 @@ Ensure both files are included in the same folder structure.
 
 ---
 
-## ** Submission Checklist**
+##  Submission Checklist
 
 Before uploading to Google Drive, ensure you include:
 
