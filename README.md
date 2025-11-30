@@ -1,0 +1,173 @@
+# 📄 **README – Blackcoffer Data Extraction & NLP Analysis**
+
+## ** Project Overview**
+
+This project completes the **Blackcoffer – Data Extraction & Text Analysis Assignment**.
+It performs:
+
+1. **Web Scraping** – Extracts only the *article title and article text* from each URL provided in `Input.xlsx`.
+2. **Text Processing & NLP** – Computes all required linguistic and readability metrics from the extracted article text.
+3. **Output Generation** – Saves:
+
+   * All extracted articles as `.txt` files
+   * Final results in the required format (`Output.xlsx`)
+
+This project is fully implemented using **Python** as instructed.
+
+---
+
+## ** Project Structure**
+
+```
+/Your_Submission/
+│── blackcoffer_assignment.py
+│── Input.xlsx
+│── Output.xlsx
+│── README.md
+│── requirements.txt
+│── /MasterDictionary/
+│      ├── positive-words.txt
+│      └── negative-words.txt
+│── /extracted_articles/
+       ├── 1.txt
+       ├── 2.txt
+       ├── ...
+```
+
+---
+
+## **🛠️ Requirements**
+
+Install all dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
+### **Python Libraries Used**
+
+* requests
+* beautifulsoup4
+* pandas
+* nltk
+* openpyxl
+* argparse
+* re
+* os
+
+NLTK stopwords are auto-downloaded inside the script.
+
+---
+
+## **🚀 How to Run the Script**
+
+Open terminal / command prompt in the project directory and run:
+
+```bash
+python blackcoffer_assignment.py --input Input.xlsx --output Output.xlsx --text_dir extracted_articles
+```
+
+### **Arguments Explained**
+
+| Argument     | Description                                    |
+| ------------ | ---------------------------------------------- |
+| `--input`    | Path to Input.xlsx                             |
+| `--output`   | Path where Output.xlsx should be generated     |
+| `--text_dir` | Folder name to save all extracted `.txt` files |
+
+Example:
+
+```bash
+python blackcoffer_assignment.py --input Input.xlsx --output Output.xlsx --text_dir extracted_articles
+```
+
+---
+
+## ** What the Script Does**
+
+###  **Data Extraction**
+
+For each URL in Input.xlsx:
+
+* Fetches the webpage using `requests`
+* Extracts:
+
+  * Article Title (`<h1>`)
+  * Article Body (`<div class="td-post-content">`)
+* Removes website header, footer, ads, menus, etc.
+* Saves the extracted article as a `.txt` file with the name:
+
+  ```
+  URL_ID.txt
+  ```
+
+---
+
+###  **Text Analysis**
+
+The script computes all variables listed in **Text Analysis.docx**, including:
+
+* Positive Score
+* Negative Score
+* Polarity Score
+* Subjectivity Score
+* Average Sentence Length
+* Percentage of Complex Words
+* Fog Index
+* Average Words per Sentence
+* Complex Word Count
+* Word Count
+* Syllables per Word
+* Personal Pronouns
+* Average Word Length
+
+Complex words are identified using a custom syllable-counting function.
+
+---
+
+###  **Output Generation**
+
+Creates **Output.xlsx** with:
+
+* All input columns (URL_ID, URL, etc.)
+* All computed NLP features
+* Extracted Title
+
+---
+
+## ** Dependencies / Dictionary Files**
+
+The script uses:
+
+```
+MasterDictionary/positive-words.txt
+MasterDictionary/negative-words.txt
+```
+
+Ensure both files are included in the same folder structure.
+
+---
+
+## ** Notes**
+
+* Internet connection is required for web scraping.
+* If some pages do not load, the script logs errors and continues.
+* All text cleaning and processing follow the guidelines in the assignment.
+
+---
+
+## ** Submission Checklist**
+
+Before uploading to Google Drive, ensure you include:
+
+* ✔ `blackcoffer_assignment.py`
+* ✔ `Output.xlsx`
+* ✔ All extracted `.txt` files
+* ✔ `README.md`
+* ✔ `requirements.txt`
+* ✔ `MasterDictionary` folder
+
+---
+
+✅ `requirements.txt`
+✅ Final Submission ZIP Folder
