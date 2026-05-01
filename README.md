@@ -1,4 +1,4 @@
-# 📄 **README – Blackcoffer Data Extraction & NLP Analysis**
+#  **README – Blackcoffer Data Extraction & NLP Analysis**
 
 ##  Project Overview
 
@@ -169,5 +169,3 @@ Before uploading to Google Drive, ensure you include:
 
 ---
 
-✅ `requirements.txt`
-✅ Final Submission ZIP Folder
